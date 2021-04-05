@@ -1,0 +1,108 @@
+.animation1 {
+  top: 93%;
+  animation: mymove1 3s infinite;
+  position: absolute;
+  animation-timing-function: ease;
+}
+@keyframes mymove1 {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 200px;
+  }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animation2 {
+  top: 93%;
+  animation: mymove2 3s infinite;
+  position: absolute;
+  animation-timing-function: ease;
+}
+@keyframes mymove2 {
+  from {
+    left: 200px;
+  }
+  to {
+    left: 400px;
+  }
+}
+.animation3 {
+  top: 93%;
+  animation: mymove3 3s infinite;
+  position: absolute;
+  animation-timing-function: ease;
+}
+@keyframes mymove3 {
+  from {
+    left: 400px;
+  }
+  to {
+    left: 600px;
+  }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animation4 {
+  top: 93%;
+  animation: mymove4 3s infinite;
+  position: absolute;
+  animation-timing-function: ease;
+}
+@keyframes mymove4 {
+  from {
+    left: 700px;
+  }
+  to {
+    left: 900px;
+  }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animation5 {
+  top: 93%;
+  animation: mymove5 3s infinite;
+  position: absolute;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+@keyframes mymove5 {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 100%;
+  }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animation6 {
+  top: 93%;
+  animation: mymove6 3s infinite;
+  position: absolute;
+  animation-timing-function: ease;
+}
+@keyframes mymove6 {
+  from {
+    left: 950px;
+  }
+  to {
+    left: 1100px;
+  }
+}
