@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
-import { useHistory, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import MovieItem, { Movie } from "../Components/MovieItem";
 import NavBar from "../Components/NavBar";
 
