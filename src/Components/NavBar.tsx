@@ -20,6 +20,20 @@ export default function NavBar() {
           {/* <Nav.Link href="/discover/:searchText?">Discover </Nav.Link>
           <Nav.Link href="/movie/:imdb_id">Movies</Nav.Link> */}
         </Nav>
+        <Nav className="mr-auto">
+          <Nav.Link href="/discover/adventure">Adventure</Nav.Link>
+          <Nav.Link href="/discover/drama">Drama </Nav.Link>
+          <Nav.Link href="/discover/love">Love</Nav.Link>
+          <Nav.Link href="/discover/action">Action</Nav.Link>
+          <Nav.Link href="/discover/history">History</Nav.Link>
+          <Nav.Link href="/discover/comedy">Comedy</Nav.Link>
+          <Nav.Link href="/discover/crime">Crime</Nav.Link>
+          <Nav.Link href="/discover/horror">Horror</Nav.Link>
+          <Nav.Link href="/discover/musical">Muscial</Nav.Link>
+          <Nav.Link href="/discover/fantasy">Fantasy</Nav.Link>
+          <Nav.Link href="/discover/mystery">Mystery</Nav.Link>
+          <Nav.Link href="/discover/war">War</Nav.Link>
+        </Nav>
         <Form inline>
           <FormControl
             type="text"
