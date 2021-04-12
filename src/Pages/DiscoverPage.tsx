@@ -74,8 +74,8 @@ export default function HomePage() {
               flexWrap: "wrap",
               margin: "0 -10px",
             }}>
-            {state.data.Search.map((movie) => {
-              return <MovieItem key={movie.imdbID} movie={movie} />;
+            {state.data.Search.map((movie, index) => {
+              return <MovieItem key={index} movie={movie} />;
             })}
           </div>
         </>

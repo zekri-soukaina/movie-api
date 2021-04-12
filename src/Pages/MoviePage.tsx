@@ -5,7 +5,9 @@ type MovieData = {
   Title: string;
   Poster: string; // a url
   Director: string;
+  Actors: string;
   Language: string;
+  Type: string;
   Plot: string;
   Genre: string; // comma-separated...
   Year: string;
@@ -34,8 +36,16 @@ export default function MoviePage() {
   return (
     <div style={{ padding: "20px" }}>
       {movieData ? (
-        <div>
-          <h1>{movieData.Title}</h1>
+        <div
+          style={{
+            boxShadow: "2px 8px 20px #ddd",
+            padding: "20px",
+            margin: "20px",
+            borderRadius: "10px",
+          }}>
+          <h1>
+            {movieData.Title}({movieData.Type})
+          </h1>
           <p>{movieData.Genre}</p>
           <div style={{ display: "flex" }}>
             <img src={movieData.Poster} alt={movieData.Title} />
@@ -43,6 +53,10 @@ export default function MoviePage() {
               <dl>
                 <dt>Director</dt>
                 <dd>{movieData.Director}</dd>
+              </dl>
+              <dl>
+                <dt>Actors</dt>
+                <dd>{movieData.Actors}</dd>
               </dl>
               <dl>
                 <dt>Language</dt>
@@ -55,6 +69,10 @@ export default function MoviePage() {
               <dl>
                 <dt>IMDB Rating</dt>
                 <dd>{movieData.imdbRating}</dd>
+              </dl>
+              <dl>
+                <dt>Year</dt>
+                <dd>{movieData.Year}</dd>
               </dl>
             </div>
           </div>
