@@ -48,8 +48,17 @@ export default function MoviePage() {
           </h1>
           <p>{movieData.Genre}</p>
           <div style={{ display: "flex" }}>
-            <img src={movieData.Poster} alt={movieData.Title} />
-            <div style={{ marginLeft: "20px" }}>
+            <img
+              src={movieData.Poster}
+              alt={movieData.Title}
+              style={{
+                boxShadow: "2px 8px 20px #ddd",
+                padding: "20px",
+                margin: "20px",
+                borderRadius: "10px",
+              }}
+            />
+            <div style={{ margin: "30px" }}>
               <dl>
                 <dt>Director</dt>
                 <dd>{movieData.Director}</dd>

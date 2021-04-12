@@ -70,9 +70,15 @@ export default function HomePage() {
           <h2>Search results</h2>
           <div
             style={{
+              // margin: "0 -10px",
               display: "flex",
-              flexWrap: "wrap",
-              margin: "0 -10px",
+              flexDirection: "column",
+              flexFlow: "wrap",
+
+              boxShadow: "2px 8px 20px #ddd",
+              padding: "10px",
+              margin: "20px",
+              borderRadius: "10px",
             }}>
             {state.data.Search.map((movie, index) => {
               return <MovieItem key={index} movie={movie} />;

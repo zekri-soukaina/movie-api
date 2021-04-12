@@ -18,9 +18,10 @@ export default function MovieItem({ movie }: Props) {
     <div
       style={{
         width: "25%",
-        padding: "10px",
+
         boxSizing: "border-box",
-      }}>
+      }}
+      className="shadow-lg p-3 mb-5 bg-white">
       <Link to={`/movie/${movie.imdbID}`}>
         <strong>{movie.Title}</strong> ({movie.Year})
       </Link>

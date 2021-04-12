@@ -7,7 +7,14 @@ export default function HomePage() {
     <div>
       <NavBar />
       <img
-        style={{ width: "100%", height: "700px" }}
+        style={{
+          width: "95%",
+          height: "700px",
+          boxShadow: "2px 8px 20px #ddd",
+          padding: "20px",
+          margin: "20px",
+          borderRadius: "10px",
+        }}
         className="homeimage"
         src="https://media.giphy.com/media/3o7rc0qU6m5hneMsuc/giphy.gif"
         alt="img"
